@@ -28,6 +28,9 @@ jobs:
 
       - name: Verificar las credenciales
         run: aws sts get-caller-identity
+        
+      - name: Dar permisos a mvnw
+        run: chmod +x ./mvnw
 
       - name: Construir Spring Boot app
         run: ./mvnw clean package -DskipTests
