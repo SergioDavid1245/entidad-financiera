@@ -2,14 +2,14 @@
 
 # Configura estas variables según tu entorno
 AWS_REGION="us-east-1"
-AWS_ACCOUNT_ID="263377767970"
+AWS_ACCOUNT_ID="538595164945"
 REPO_NAME="entidad-financiera"
 IMAGE_TAG="latest"
 
 # Variables de entorno para tu contenedor
-SPRING_DATASOURCE_URL="jdbc:mysql://entidadfinanciera.c6zhks5mx4tw.us-east-1.rds.amazonaws.com"
+SPRING_DATASOURCE_URL="jdbc:mysql://entidadfinanciera.cxdkkljtb5xc.us-east-1.rds.amazonaws.com"
 SPRING_DATASOURCE_USERNAME="admin"
-SPRING_DATASOURCE_PASSWORD="DbxL3UQYgmilAfnWuHqw"
+SPRING_DATASOURCE_PASSWORD="GaOFtCjYEa05nbSlfwXK"
 
 echo "Autenticando en ECR..."
 aws ecr get-login-password --region $AWS_REGION | \
